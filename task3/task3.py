@@ -9,14 +9,13 @@ def directory_structure(path):
     if path.exists():
         recursive_directory_walk(path)
     else:
-        return 'No such directory'
+        print('No such directory')
 
 
 try:
     if len(sys.argv) > 1:
         directory_path = sys.argv[1]
-        result = directory_structure(directory_path)
-        print(result)
+        directory_structure(directory_path)
     else:
         print("Please provide a directory path as a command-line argument.")
 except Exception as error:
