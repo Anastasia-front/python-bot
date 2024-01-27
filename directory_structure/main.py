@@ -27,11 +27,3 @@ except Exception as error:
 
 # python hw03.py /path/to/your/directory // python3 task3/task3.py /Users/Anastasia/Desktop/python_bot/task2
 
-# Expected result:
-# 📦picture
-#  ┣ 📂Logo
-#  ┃ ┣ 📜IBM+Logo.png
-#  ┃ ┣ 📜ibm.svg
-#  ┃ ┗ 📜logo-tm.png
-#  ┣ 📜bot-icon.png
-#  ┗ 📜mongodb.jpg

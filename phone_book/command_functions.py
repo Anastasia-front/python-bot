@@ -31,6 +31,18 @@ def change_contact(args, contacts):
         return f"You entered not correct information. The error is '{error}'"
 
 
+def delete_contact(args, contacts):
+    try:
+        name = args[0]
+        if name in contacts:
+            del contacts[name]
+            return "Contact deleted."
+        else:
+            return "Contact not found."
+    except Exception as error:
+        return f"You entered not correct information. The error is '{error}'"
+
+
 def show_contact(args, contacts):
     if len(args) > 0:
         name = args[0]
