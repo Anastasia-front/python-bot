@@ -23,7 +23,9 @@ except Exception as error:
 
 # Example of use:
 
-# If you execute the script and pass it the absolute path to the directory as a parameter.
+# If you execute the script and pass it the absolute path 
+# to the directory as a parameter.
 
-# python hw03.py /path/to/your/directory // python3 task3/task3.py /Users/Anastasia/Desktop/python_bot/task2
+# python executed_file /path/to/your/directory // 
+# python3 directory_structure/main.py /Users/Anastasia/Desktop/python_bot/phone_book
 

@@ -2,7 +2,7 @@ from colorama import Back
 
 
 def parse_input(user_input):
-    cmd, *args = user_input.split()
+    cmd, *args = user_input.split().lower()
     cmd = cmd.strip().lower()
     return cmd, *args
 
@@ -18,11 +18,21 @@ def show_countries(countries):
     if len(countries) != 0:
         for country in countries:
             if country:
-                print( country["name"])
+                print(country["name"])
             else:
                 continue
     else:
         print("No countries.")
+
+
+def show_country_all_info(args, countries):
+    name = args[0]
+    if len(countries) != 0:
+        for country in countries:
+            if country["name"].lower() == name:
+                return show_country_info(country)
+    else:
+        return "No countries."
 
 
 def show_countries_all_info(countries):
