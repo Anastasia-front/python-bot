@@ -2,7 +2,7 @@ from colorama import Back
 
 
 def parse_input(user_input):
-    cmd, *args = user_input.split().lower()
+    cmd, *args = user_input.split()
     cmd = cmd.strip().lower()
     return cmd, *args
 
@@ -29,7 +29,7 @@ def show_country_all_info(args, countries):
     name = args[0]
     if len(countries) != 0:
         for country in countries:
-            if country["name"].lower() == name:
+            if country["name"].lower() == name.lower():
                 return show_country_info(country)
     else:
         return "No countries."
@@ -51,6 +51,7 @@ def max_statistic(args, countries, key):
     if len(args) >= 2:
         for name in args:
             found = False
+            name = name.lower()
             for country in countries:
                 current_country = country["name"].lower()
                 if current_country == name and not found:
@@ -76,6 +77,7 @@ def min_statistic(args, countries, key):
     if len(args) >= 2:
         for name in args:
             found = False
+            name = name.lower()
             for country in countries:
                 current_country = country["name"].lower()
                 if current_country == name and not found:

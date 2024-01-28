@@ -1,5 +1,5 @@
 from colorama import Back, Fore
-from command_functions import (
+from functions import (
     add_contact,
     change_contact,
     delete_contact,
@@ -9,15 +9,15 @@ from command_functions import (
 )
 
 commands = [
-        "hello",
-        "add [name] [phone]",
-        "change [name] [phone]",
-        "delete [name]",
-        "contact [name]",
-        "contacts",
-        "commands",
-        "close/exit",
-    ]
+    "hello",
+    "add [name] [phone]",
+    "change [name] [phone]",
+    "delete [name]",
+    "contact [name]",
+    "contacts",
+    "commands",
+    "close/exit",
+]
 
 
 def main():

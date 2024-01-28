@@ -40,7 +40,8 @@ def main():
                 break
 
     print(
-        f'{Back.LIGHTWHITE_EX}"Welcome to the assistant bot for information about countries"{Back.RESET}'
+        f"{Back.LIGHTWHITE_EX}Welcome to the assistant bot \
+        for information about countries 🇧🇷 🇲🇽 🇨🇳 🇮🇳 🇮🇩 🇺🇸 🇧🇩{Back.RESET}"
     )
 
     while True:
@@ -52,7 +53,7 @@ def main():
             break
 
         elif command in ["hi"]:
-            print(Back.YELLOW + "What are you interesting in?" + Back.RESET)
+            print(Back.LIGHTBLACK_EX + "What are you interesting in?" + Back.RESET)
 
         elif command == "country-info":
             print(
@@ -90,7 +91,7 @@ def main():
                 print(f"{Fore.LIGHTGREEN_EX}{command}{Fore.RESET}")
 
         else:
-            print(Back.RED + "Invalid command." + {Back.RESET})
+            print(Back.RED + "Invalid command." + Back.RESET)
 
 
 if __name__ == "__main__":

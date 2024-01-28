@@ -11,7 +11,7 @@ def add_contact(args, contacts):
     try:
         name, phone = args
         if name in contacts:
-            return "Contact with this name had already exist."
+            return "Contact with this name has already exist."
         elif name.isalpha() and phone.isdigit():
             contacts[name] = phone
             return "Contact added."

@@ -1,4 +1,11 @@
 # Screenshots
-![screenshot](./screenshots/1.png)
+
+## Countries (info, comparison)
+![screenshot](./screenshots/1.1.png)
+![screenshot](./screenshots/1.2.png)
+
+## Directory structure
 ![screenshot](./screenshots/2.png)
+
+## Phone book (add, change, get, delete)
 ![screenshot](./screenshots/3.png)
