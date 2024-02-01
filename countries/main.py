@@ -23,7 +23,7 @@ commands = [
 
 def main():
     countries = []
-    with open("country_comparison/countries.txt", "r", encoding="UTF-8") as file:
+    with open("countries/countries.txt", "r", encoding="UTF-8") as file:
         while True:
             line = file.readline()
             if line:
@@ -57,7 +57,7 @@ def main():
 
         elif command == "country-info":
             print(
-                f" {Back.LIGHTMAGENTA_EX}{show_country_all_info(args, countries)}{Back.RESET}"
+                f"{Back.LIGHTMAGENTA_EX}{show_country_all_info(args, countries)}{Back.RESET}"
             )
 
         elif command == "countries":
@@ -78,7 +78,7 @@ def main():
 
         elif command == "min-population":
             print(
-                f'{ Back.LIGHTYELLOW_EX}{min_statistic(args, countries, "population")}{Back.RESET}'
+                f'{Back.LIGHTYELLOW_EX}{min_statistic(args, countries, "population")}{Back.RESET}'
             )
 
         elif command == "min-size":
